@@ -12,7 +12,7 @@ namespace EnumeratedType601
 {
     public partial class frmDaysOfTheWeek : Form
     {
-
+        //global delcaration
         enum DAYS
         {
                 Monday,
@@ -28,6 +28,7 @@ namespace EnumeratedType601
         public frmDaysOfTheWeek()
         {
             InitializeComponent();
+          
             foreach(DAYS weekday in Enum.GetValues(typeof(DAYS)))
             {
                 this.lstList.Items.Add(weekday);
@@ -37,6 +38,7 @@ namespace EnumeratedType601
 
         private void lstList_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //when user clickes on day of week
             string selectedItem;
 
             selectedItem = Convert.ToString(this.lstList.SelectedItem);
