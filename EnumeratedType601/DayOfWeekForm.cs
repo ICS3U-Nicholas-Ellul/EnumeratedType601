@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Created by: Nicholas Ellul
+ * Created on: 20-Nov-2015
+ * Created for: ICS3U
+ * Daily Assignment – Unit 6-01
+ * This program uses an enumerated data type and lets the user pick it from a list box.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,7 +51,7 @@ namespace EnumeratedType601
 
             selectedItem = Convert.ToString(this.lstList.SelectedItem);
 
-            MessageBox.Show("Your favourite day of the week is " + selectedItem);
+            MessageBox.Show(selectedItem,"Your favourite day of the week is...");
         }
 
 
