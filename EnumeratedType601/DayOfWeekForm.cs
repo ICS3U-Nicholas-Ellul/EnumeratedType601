@@ -23,13 +23,13 @@ namespace EnumeratedType601
         //global delcaration
         enum DAYS
         {
-                Monday,
-                Tuesday,
-                Wednesday,
-                Thursday,
-                Friday,
-                Saturday,
-                Sunday
+                Monday = 2,
+                Tuesday = 3,
+                Wednesday = 4,
+                Thursday = 5,
+                Friday = 6,
+                Saturday = 7,
+                Sunday = 1
         }
 
 
@@ -46,12 +46,14 @@ namespace EnumeratedType601
 
         private void lstList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //when user clickes on day of week
+            //when user clickes on day of  week
             string selectedItem;
+            int assignedValues;
 
             selectedItem = Convert.ToString(this.lstList.SelectedItem);
+            assignedValues = (int)(this.lstList.SelectedItem);
 
-            MessageBox.Show(selectedItem,"Your favourite day of the week is...");
+            MessageBox.Show("day " + assignedValues + " of the week.","Your favourite day of the week is..");
         }
 
 
